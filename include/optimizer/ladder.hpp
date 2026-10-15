@@ -32,6 +32,8 @@ std::vector<RatePoint> pareto_frontier(std::vector<RatePoint> points);
 // ascending bitrate; slopes strictly decrease (diminishing returns).
 std::vector<RatePoint> convex_hull(std::vector<RatePoint> points);
 
+
+
 struct LadderConfig {
     int max_rungs = 6;
     double min_gap_db = 1.0;            // adjacent rungs must differ by at least this much quality
@@ -40,6 +42,12 @@ struct LadderConfig {
     double min_kbps = 0;
     double max_kbps = std::numeric_limits<double>::infinity();
 };
+
+
+
+
+
+
 
 // Chooses the rungs from raw probe results:
 //  1. Find the knee: the last hull point whose incoming slope is still at least

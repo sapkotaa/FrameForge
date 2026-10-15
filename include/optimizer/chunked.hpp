@@ -42,9 +42,18 @@ struct ChunkedResult {
     double speedup() const { return wall_seconds > 0 ? cpu_seconds / wall_seconds : 1.0; }
 };
 
+
+
+
+
+
 #if defined(FF_WITH_FFMPEG)
 ChunkedResult encode_chunked(const std::vector<FramePtr>& frames, const EncodeParams& params,
                              const std::vector<Chunk>& plan, JobRunner& runner);
 #endif
+
+
+
+
 
 }  // namespace ff

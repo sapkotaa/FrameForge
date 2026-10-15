@@ -39,6 +39,13 @@ private:
     std::unique_ptr<Impl> impl_;
 };
 
+
+
+
+
+
+
+
 // Decodes bare codec packets (no container), e.g. straight from an encoder.
 class PacketDecoder {
 public:
@@ -60,4 +67,16 @@ private:
     std::unique_ptr<Impl> impl_;
 };
 
-}  // namespace ff
+
+
+
+
+
+
+}
+
+
+
+
+
+

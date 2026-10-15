@@ -24,6 +24,12 @@ public:
         return std::shared_ptr<ObjectPool>(new ObjectPool(count, factory));
     }
 
+
+  
+
+
+
+
     // Blocks until an object is free. Returns nullptr only after close().
     // The returned shared_ptr hands the object back to the pool when the last
     // reference drops, so stages can fan out references without bookkeeping.

@@ -17,6 +17,8 @@ TEST(frames_are_aligned_and_zeroed) {
     CHECK_EQ(f.byte_size(), size_t(100 * 50 * 3 / 2));
 }
 
+
+
 TEST(frame_rejects_odd_dimensions) {
     bool threw = false;
     try {
@@ -96,3 +98,6 @@ TEST(pool_is_thread_safe_under_contention) {
     CHECK_EQ(total.load(), 8000);
     CHECK_EQ(pool->available(), size_t(4));
 }
+
+
+
