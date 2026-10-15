@@ -11,6 +11,10 @@ namespace ff {
 // 8-bit planar YCbCr 4:2:0 (I420). Planes are 64-byte aligned and every row
 // starts on a 64-byte boundary, so SIMD loads never straddle cache lines at
 // row starts. Width and height must be even.
+
+
+
+
 class Frame {
 public:
     static constexpr int kAlignment = 64;

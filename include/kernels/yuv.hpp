@@ -22,3 +22,8 @@ inline constexpr double raw_bitrate_mbps(int w, int h, double fps) {
 void rgb24_to_i420(const uint8_t* rgb, ptrdiff_t rgb_stride, Frame& out);
 
 }  // namespace ff
+
+
+
+
+

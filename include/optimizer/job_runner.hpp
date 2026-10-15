@@ -41,6 +41,12 @@ public:
     Stats stats() const;
     unsigned workers() const noexcept { return static_cast<unsigned>(threads_.size()); }
 
+
+
+
+
+
+
 private:
     struct Job {
         std::string name;
@@ -59,5 +65,9 @@ private:
     Stats stats_;
     std::vector<std::thread> threads_;
 };
+
+
+
+
 
 }  // namespace ff

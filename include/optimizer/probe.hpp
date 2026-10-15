@@ -37,9 +37,14 @@ struct ProbeConfig {
     bool measure_ssim = true;
 };
 
+
+
+
 // Encodes the clip at every (height, crf) pair as parallel jobs. Each
 // reconstruction is upscaled back to the source size and compared with the
 // source, so rungs at different resolutions land on one quality axis.
 std::vector<RatePoint> probe_rate_quality(const SourceClip& clip, const ProbeConfig& cfg, JobRunner& runner);
+
+
 
 }  // namespace ff
